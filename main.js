@@ -55,7 +55,6 @@ const clickItem = (e) => {
     const tarefasLista = getTarefas()
     const elemento = e.target
     const indice = elemento.dataset.indice
-    console.log(elemento.type)
     if (elemento.type === 'button') {
         tarefasLista.splice(indice, 1)
         setTarefas(tarefasLista)
